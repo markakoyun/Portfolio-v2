@@ -1,0 +1,18 @@
+
+@media screen and (max-width: 400px){
+    .cloud-one{
+     width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:565px){
+    #device{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 991px){
+    .skills{
+        padding-top: 40px;
+    }
+}

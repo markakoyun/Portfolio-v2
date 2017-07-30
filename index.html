@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsive.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <title>Mark Portfolio</title>
+</head>
+<body>
+    <div id="header">
+      <div class ="navigation">
+          <div class="menu-nav">
+                <div class="burger-nav"></div>
+            </div>
+          <nav>
+              <ul>
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+              </ul>
+          </nav>
+      </div>
+       <div class="container">
+            <div class="header-nav">
+                <div class="logo">
+                </div>
+
+                <div class="menu">
+                    <div class="burger-icon"></div>
+                </div>
+            </div>
+            
+            <div class="header-inner">
+               <img class="cloud-one" src="image/hi.png">              
+            </div>
+            
+            <div class="header-btn">
+                <a href="#portfolio"><button class="view-work">View My Work</button></a>
+             </div>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <h1 class="about-title">About Me</h1>
+            <p>I am Mark Jaime, currently looking for a job as front end web developer. My first job was a front end developer in a company in Ortigas. My task was to translate PSD design mockups into responsive HTML , maintain company's portal site and modifying client sites. Recently I also worked as web designer in a BPO company in Alabang. I was responsible for designing, developing and modifying websites according to the client's specification.
+            </p>
+            
+            <div class="row padding">
+                <div class="col-md-6">
+                    <img id="device" src ="image/device.png" alt="device">
+                </div>
+                
+                <div class="col-md-6">
+                    <ul class="skills">
+                        <li>HTML/HTML5</li>
+                        <li>CSS/CSS3</li>
+                        <li>Javascript</li>
+                        <li>JQuery</li>
+                        <li>Bootstrap/UiKit/Other CSS Frameworks</li>
+                        <li>PSD to HTML</li>
+                        <li>Photoshop</li>
+                        <li>Sass</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="port-title">Portfolio</h1>
+            <div class="row text-center">
+                <div class="col-md-4">
+                   <div class="image-cont">
+                    <img src="image/port1.jpg" alt="port2">
+                    <p>PSD to HTML</p>
+                  </div>
+                </div>
+                
+                <div class="col-md-4">
+                      <div class="image-cont">
+                    <img src="image/port2.jpg" alt="port2">
+                    <p>PSD to HTML</p>
+                  </div>
+                </div>
+                
+                <div class="col-md-4">
+                      <div class="image-cont">
+                    <img src="image/port3.jpg" alt="port3">
+                    <p>Web Design / CMS</p>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="row text-center">
+                <div class="col-md-4">
+                   <div class="image-cont">
+                    <img src="image/port4.jpg" alt="port4">
+                    <p>Web Design / CMS</p>
+                  </div>
+                </div>
+                
+                <div class="col-md-4">
+                      <div class="image-cont">
+                    <img src="image/port5.jpg" alt="port5">
+                    <p>Web Design / CMS</p>
+                  </div>
+                </div>
+                
+                <div class="col-md-4">
+                      <div class="image-cont">
+                    <img src="image/port6.jpg" alt="port6">
+                    <p>Web Design / CMS</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/markdjaime" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/markakoyun" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        </ul>
+        <p>© 2017 Mark Jaime Personal Portfolio</p>
+    </footer>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.menu').click(function(){
+             $('.navigation').toggleClass('nav-hide');
+        }); 
+        
+         $('.menu-nav').click(function(){
+             $('.navigation').removeClass('nav-hide');
+        }); 
+        
+        var link = $('nav ul li a');
+        link.click(function(){
+            $('.navigation').removeClass('nav-hide');
+        });
+      
+    });
+</script>
+</html>
