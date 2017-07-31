@@ -8,6 +8,9 @@ p , li{
  line-height: 180%;
 }
 
+.bodynoscroll{
+    overflow: hidden;
+}
 .row.padding{
     padding-top: 40px;
 }
@@ -58,9 +61,7 @@ nav ul li a:hover , nav ul li a:focus{
 }
 .menu-nav{
     padding: 10px;
-    position: absolute;
-    top: 5%;
-    left: 90%;
+    float: right;
 }
 
 .container{

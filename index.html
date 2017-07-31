@@ -15,7 +15,8 @@
 <body>
     <div id="header">
       <div class ="navigation">
-          <div class="menu-nav">
+          <div class="container">
+            <div class="menu-nav">
                 <div class="burger-nav"></div>
             </div>
           <nav>
@@ -25,6 +26,7 @@
                   <li><a href="#portfolio">Portfolio</a></li>
               </ul>
           </nav>
+          </div>
       </div>
        <div class="container">
             <div class="header-nav">
@@ -137,19 +139,27 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script>
     $(document).ready(function(){
+        
         $('.menu').click(function(){
              $('.navigation').toggleClass('nav-hide');
+             $('body').addClass('bodynoscroll');
         }); 
-        
+         
+         /* hide overlay when */
          $('.menu-nav').click(function(){
              $('.navigation').removeClass('nav-hide');
+             $('body').removeClass('bodynoscroll');
         }); 
         
+        /* hide overlay when click the links */
         var link = $('nav ul li a');
         link.click(function(){
             $('.navigation').removeClass('nav-hide');
+            $('body').removeClass('bodynoscroll');
         });
         
+        
+        /* smooth scroll */
         $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
