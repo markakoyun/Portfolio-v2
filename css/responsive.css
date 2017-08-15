@@ -10,6 +10,10 @@
     #device{
         width: 100%;
     }
+    
+    .header{
+        height: 100vh;
+    }
 }
 @media screen and (max-width: 991px){
     .skills{
