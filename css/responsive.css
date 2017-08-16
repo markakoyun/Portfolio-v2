@@ -11,13 +11,6 @@
         width: 100%;
     }
     
-    .header{
-        height: 100vh;
-    }
-    
-    .header-inner{
-        padding-top: 100px;
-    }
 }
 @media screen and (max-width: 991px){
     .skills{

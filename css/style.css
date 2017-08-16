@@ -17,6 +17,7 @@ p , li{
 
 header{
     background-color: #00bcd4;
+    height: 100vh;
 }
 
 .navigation{
@@ -80,6 +81,7 @@ nav ul li a:hover , nav ul li a:focus{
     float: right;
     cursor: pointer;
 }
+
 .burger-nav{
  background-color: #fff;
   width: 30px;
@@ -130,9 +132,15 @@ transform: rotate(45deg);
 
 .header-inner{
     text-align: center;
-    padding: 200px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
+.cloud-one{
+    padding: 50px;
+}
 .header-btn{
     text-align: center;
     padding: 100px 0 100px 0;
